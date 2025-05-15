@@ -4,7 +4,7 @@ FROM python:3.11-slim
 # Avoid interactive prompts and install dependencies
 ENV DEBIAN_FRONTEND=noninteractive
  
-# Install system dependencies including Tesseract
+# Install system dependencies including Tesseract yes
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
     libglib2.0-0 \
