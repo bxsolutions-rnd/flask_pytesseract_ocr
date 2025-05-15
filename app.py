@@ -41,7 +41,15 @@ def upload_webcam():
  
     return render_template('index.html', result=result_string, total=total_amount, cash=cash_paid)
  
+
+# for render 
+# if __name__ == '__main__':
+#     port = int(os.environ.get("PORT", 5000))
+#     app.run(host='0.0.0.0', port=port)
+
+# for local deployment
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+   app.run(debug=True)
+
+
  
